@@ -1,6 +1,7 @@
 # Final_Sem_Project
 
 This project focuses on comparing different models for stock price prediction using time series and LSTM-based approaches. The objective is to evaluate and identify the most effective model for forecasting future stock prices across multiple major companies.
+
 **Companies Covered**
 - Apple Inc. (AAPL)
 - Microsoft Corp. (MSFT)
