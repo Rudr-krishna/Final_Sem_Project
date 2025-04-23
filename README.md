@@ -25,8 +25,6 @@ This project focuses on comparing different models for stock price prediction us
     - Each model is trained and tested on one year of historical stock data for each company.
     - Performance metrics are compared to analyze which model performs best.
     - Evaluation includes error metrics tables and actual vs predicted graph visualizations.
-    - Visual results for one representative company are shown in the report, with results for 
-      the remaining companies included in the appendix.
 
 ## Technology Stack
 
@@ -34,3 +32,70 @@ This project focuses on comparing different models for stock price prediction us
 - **Libraries**: NumPy, Pandas, Scikit-learn, Keras, Statsmodels, Matplotlib, Seaborn
 - **Model Used**: LSTM, ARIMA, ARIMAX
 - **Data Source**: Yahoo Finance API 
+
+## Getting Started
+
+Follow these steps to clone the repository and run the code:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Rudr-krishna/Final_Sem_Project.git
+cd your-repo-name
+```
+
+
+### 2. Install Required Dependencies
+
+It is recommended to use a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate
+```
+
+Then install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## File Structure
+
+- `Model_prediction.ipynb` – Main notebook to run the model predictions
+- `Generalized_EDA.ipynb` – Notebook for the EDA of all companies stocks data.
+- `Generalized_models_and_Evaluation.ipynb` – Main notebook for model training and testing with evaluation of all companies.
+- `Data_extraction.py` – Python script to download the stocks data.
+- `Models/` – Folder containing saved `.pkl` models
+- `Stocks_Data/` – Folder for storing raw or preprocessed stock data
+- `requirements.txt` – All required Python packages
+
+---
+
+## How to Use
+
+After installing the requirements, open the Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Then run:
+
+```
+Model_prediction.ipynb
+```
+
+This notebook:
+- Loads pre-trained models (`ARIMA`, `ARIMAX`, `LSTM`)
+- Uses company-wise data to make **30-day predictions**
+- Visualizes the predicted stock prices of the next 30 days.
+
+---
+
+## Note
+
+- Models are already trained and saved in `.pkl` format.
+- Ensure you have a stable internet connection for downloading data using `yfinance`.
